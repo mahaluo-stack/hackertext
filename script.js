@@ -37,4 +37,25 @@ function gatherVisibleTextElements() {
   });
   return visibleParagraphsAndHeaders;
 }
+
+function hackMainframe() {
+  const text = document.createElement('div');
+  text.innerHTML = 'hacking mainframe...';
+  text.style.color = 'red';
+  text.style.fontWeight = 'bold';
+  text.style.position = 'absolute';
+  text.style.fontSize = '30px';
+  document.body.appendChild(text);
+
+  function moveText() {
+    const x = Math.floor(Math.random() * window.innerWidth);
+    const y = Math.floor(Math.random() * window.innerHeight);
+    text.style.left = `${x}px`;
+    text.style.top = `${y}px`;
+  }
+
+  setInterval(moveText, 1000);
+}
+
 HackAllText();
+HackMainframe();
