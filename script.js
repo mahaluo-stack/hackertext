@@ -38,7 +38,7 @@ function gatherVisibleTextElements() {
   return visibleParagraphsAndHeaders;
 }
 
-function hackMainframe() {
+function HackMainframe() {
   const text = document.createElement('div');
   text.innerHTML = 'hacking mainframe...';
   text.style.color = 'red';
