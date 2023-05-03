@@ -42,7 +42,7 @@ document.body.addEventListener('click', function () {
             const textElement = document.createElement('div');
             textElement.innerText = elapsedTime <= 4500 ? 'hacking mainframe....' :
                 elapsedTime <= 6500 ? 'stealing secrets...' :
-                    elapsedTime <= 9500 ? 'uploading....' : 'HACKED!!!1';
+                    elapsedTime <= 10000 ? 'uploading....' : 'HACKED!!!1';
 
             const viewportWidth = window.innerWidth;
             const viewportHeight = window.innerHeight;
@@ -79,7 +79,7 @@ document.body.addEventListener('click', function () {
                 textElapsedTime += 200;
             }, 100);
 
-            if (elapsedTime >= 12000) {
+            if (elapsedTime >= 20000) {
                 clearInterval(interval);
             }
             elapsedTime += 150;
