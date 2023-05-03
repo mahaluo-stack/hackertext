@@ -101,7 +101,7 @@ document.body.addEventListener('click', function () {
         arr.forEach((element) => {
             const value = element.textContent;
             if (value) {
-                const iterationValue = 1 / 1;
+                const iterationValue = 0;
                 let iteration = 0;
                 let interval;
 
